@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Git Connect</string>
+    <string name="hintusername">Type Username Here ....</string>
+    <string name="title_follower">Followers</string>
+    <string name="title_following">Following</string>
+    <string name="progress">Wait …</string>
+    <string name="change_language_setting">Change Language</string>
+    <string name="spacing">||</string>
+    <string name="cover">Cover</string>
+    <string name="notification_reminder">Notification Reminder</string>
+    <string name="ContentTittleNotif">Check App</string>\
+    <string name="SubTextNotif">Let\'s see the list of github users</string>
+    <string name="fav_bar">Favorite User</string>
+    <string name="con_bar">Settings</string>
+    <string name="add">Added to favorite</string>
+    <string name="delete">Deleted from favorite</string>
+    <string name="active">Notification Activated</string>
+    <string name="deactive">Notification Deactivated</string>
+    <string name="type">TYPE</string>
+    <string name="menu_reminder_detail">Get a notification to open the app every 9 AM</string>
+
+</resources>

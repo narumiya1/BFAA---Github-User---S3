@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.DetailActivity"
+    android:background="@color/colorPrimary">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatar_detail_civ"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/name_detail_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/colorwhite"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/avatar_detail_civ"
+        app:layout_constraintStart_toStartOf="@+id/avatar_detail_civ"
+        app:layout_constraintTop_toBottomOf="@+id/avatar_detail_civ" />
+
+    <TextView
+        android:id="@+id/username_detail_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorwhite"
+        app:layout_constraintEnd_toEndOf="@+id/name_detail_tv"
+        app:layout_constraintStart_toStartOf="@+id/name_detail_tv"
+        app:layout_constraintTop_toBottomOf="@+id/name_detail_tv" />
+
+    <TextView
+        android:id="@+id/location_detail_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/colorwhite"
+        app:layout_constraintEnd_toStartOf="@id/text_view"
+        app:layout_constraintTop_toBottomOf="@+id/username_detail_tv" />
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/spacing"
+        android:textColor="@color/colorwhite"
+        app:layout_constraintStart_toStartOf="@id/username_detail_tv"
+        app:layout_constraintEnd_toEndOf="@id/username_detail_tv"
+        app:layout_constraintTop_toBottomOf="@+id/username_detail_tv" />
+
+    <TextView
+        android:id="@+id/company_detail_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorwhite"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@id/text_view"
+        app:layout_constraintTop_toBottomOf="@+id/username_detail_tv" />
+
+    <TextView
+        android:id="@+id/repository_detail_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorwhite"
+        app:layout_constraintEnd_toEndOf="@+id/text_view"
+        app:layout_constraintStart_toStartOf="@+id/text_view"
+        app:layout_constraintTop_toBottomOf="@+id/company_detail_tv" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPrimaryDark"
+        app:tabTextColor="@color/colorwhite"
+        app:layout_constraintEnd_toEndOf="@+id/repository_detail_tv"
+        app:layout_constraintStart_toStartOf="@+id/repository_detail_tv"
+        app:layout_constraintTop_toBottomOf="@+id/repository_detail_tv" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:background="@color/colorwhite"
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab_detail">
+    </androidx.viewpager.widget.ViewPager>
+
+    <com.github.ivbaranov.mfb.MaterialFavoriteButton
+        android:id="@+id/mfb_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:mfb_animate_favorite="true"
+        app:mfb_type="heart" />
+</androidx.constraintlayout.widget.ConstraintLayout>

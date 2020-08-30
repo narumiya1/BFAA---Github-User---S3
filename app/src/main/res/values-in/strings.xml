@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Git Connect</string>
+    <string name="hintusername">Ketikkan Nama Pengguna ....</string>
+    <string name="title_follower">Pengikut</string>
+    <string name="title_following">Mengikuti</string>
+    <string name="progress">Tunggu Sebentar …</string>
+    <string name="change_language_setting">Ubah Bahasa</string>
+    <string name="spacing">||</string>
+    <string name="cover">Sampul</string>
+    <string name="notification_reminder">Notifikasi Pengingat</string>
+    <string name="ContentTittleNotif">Ayo Buka Aplikasi Git Connect</string>\
+    <string name="SubTextNotif">Ayo lihat daftar pengguna github</string>
+    <string name="fav_bar">Pengguna Favorit</string>
+    <string name="con_bar">Pengaturan</string>
+    <string name="add">Ditambahkan ke favorit</string>
+    <string name="delete">Dihapus dari favorit</string>
+    <string name="active">Pengingat diaktifkan</string>
+    <string name="deactive">Pengingat dinon-aktifkan</string>
+    <string name="type">TIPE</string>
+    <string name="menu_reminder_detail">Dapatkan notifikasi untuk membuka app setiap jam 9 pagi</string>
+</resources>

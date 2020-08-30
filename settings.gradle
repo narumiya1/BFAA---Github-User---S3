@@ -1,0 +1,3 @@
+include ':favapp'
+include ':app'
+rootProject.name = "Git Connect"
